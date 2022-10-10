@@ -86,4 +86,4 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             highest = round(pData[-1][1] / os.cpu_count(), 2)
             if highest == 0.0:
                 continue
-            queueHandler.queueFunction(queueHandler.eventQueue, ui.message, _("{processName} loaded CPU by {processLoadPercent}%").format(processName=pData[-1][0], processLoadPercent=highest))
+            queueHandler.queueFunction(queueHandler.eventQueue, ui.message, _("CPU resources {processLoadPercent}%. Process {processName}").format(processName=pData[-1][0], processLoadPercent=highest))

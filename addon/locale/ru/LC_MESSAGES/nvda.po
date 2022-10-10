@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'cpuMon' '0.1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2022-10-09 21:26+0400\n"
-"PO-Revision-Date: 2022-10-09 21:29+0400\n"
+"POT-Creation-Date: 2022-10-10 12:52+0400\n"
+"PO-Revision-Date: 2022-10-10 12:53+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -19,67 +19,71 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: addon\globalPlugins\cpuMon\__init__.py:84
+#: addon\globalPlugins\cpuMon\__init__.py:89
 #, python-brace-format
-msgid "{processName} loaded CPU by {processLoadPercent}%"
-msgstr "{processName} Загрузка процессора на {processLoadPercent}%"
+msgid "CPU resources {processLoadPercent}%. Process {processName}"
+msgstr "Ресурсов процессора {processLoadPercent}%. Процесс {processName}"
 
-#: addon\globalPlugins\cpuMon\donatedialog.py:17
+#: addon\globalPlugins\cpuMon\donatedialog.py:22
 msgid "Donate via Paypal"
 msgstr "Пожертвовать через Paypal"
 
-#: addon\globalPlugins\cpuMon\donatedialog.py:18
+#: addon\globalPlugins\cpuMon\donatedialog.py:23
 msgid "Donate via Yoomoney"
 msgstr "Пожертвовать через Yoomoney"
 
-#: addon\globalPlugins\cpuMon\donatedialog.py:33
+#: addon\globalPlugins\cpuMon\donatedialog.py:38
 #, python-brace-format
 msgid "Request for contributions to {name}"
 msgstr "Запрос для внесения вклада в {name}"
 
-#: addon\globalPlugins\cpuMon\donatedialog.py:34
+#: addon\globalPlugins\cpuMon\donatedialog.py:39
 #, python-brace-format
 msgid ""
-" {name} is a free add-on for NVDA.\n"
-" You can make a donation to its author to support further developments of "
+"{name} is a free add-on for NVDA.\n"
+"You can make a donation to its author to support further developments of "
 "this and other free projects.\n"
-" Do you want to donate now? Choose one of the available payment methods. You "
+"Do you want to donate now? Choose one of the available payment methods. You "
 "will be redirected to the corresponding website to complete a donation"
 msgstr ""
-" {name} Является бесплатным дополнением для NVDA.\n"
-" Вы можете внести пожертвование автора что бы поддержать разработку этого и "
+"{name} Является бесплатным дополнением для NVDA.\n"
+"Вы можете внести пожертвование автору чтобы поддержать разработку этого и "
 "других проектов.\n"
-" Хотите внести пожертвование сейчас? Выберите один из доступных методов "
+"Хотите внести пожертвование сейчас? Выберите один из доступных методов "
 "оплаты. Вы будете перенаправлены На соответствующий сайт Для завершения "
 "процесса"
 
-#: addon\globalPlugins\cpuMon\interface.py:16
+#: addon\globalPlugins\cpuMon\interface.py:21
 msgid "Enable addon"
 msgstr "Включить дополнение"
 
-#: addon\globalPlugins\cpuMon\interface.py:18
-msgid "Minimum threshold for monitoring CPU load (in percents):"
-msgstr "Минимальный порог для мониторинга загрузки процессора (В процентах):"
-
-#: addon\globalPlugins\cpuMon\interface.py:19
-msgid "Monitor update interval (in seconds):"
-msgstr "Интервал обновления монитора (в секундах):"
-
-#: addon\globalPlugins\cpuMon\interface.py:20
-msgid "Beep frequency for CPU load indication (in HZ):"
-msgstr "Частота сигнала для индикации загрузки процессора (в герцах):"
-
-#: addon\globalPlugins\cpuMon\interface.py:21
-msgid "Beep lenth for CPU load indication (in milliseconds):"
-msgstr "Длинна сигнала для индикации загрузки процессора (в миллисекундах):"
-
-#: addon\globalPlugins\cpuMon\interface.py:22
-msgid "Beep volume for CPU load indication:"
-msgstr "Громкость сигнала для индикации загрузки процессора:"
-
 #: addon\globalPlugins\cpuMon\interface.py:23
-msgid "Support an author with donation..."
-msgstr "Поддержать автора путем внесения вклада..."
+msgid "CPU load threshold (in percents):"
+msgstr "Порог загрузки процессора (в процентах):"
+
+#: addon\globalPlugins\cpuMon\interface.py:24
+msgid "Measuring interval (in seconds):"
+msgstr "Интервал Замера (в секундах):"
+
+#: addon\globalPlugins\cpuMon\interface.py:25
+msgid "CPU load notification beep options"
+msgstr "Параметры сигнала оповещения загрузки процессора"
+
+#: addon\globalPlugins\cpuMon\interface.py:29
+msgid "Frequency (in HZ):"
+msgstr "Частота (в герцах):"
+
+#: addon\globalPlugins\cpuMon\interface.py:30
+msgid "Length (in milliseconds):"
+msgstr "Длина (В миллисекундах):"
+
+#: addon\globalPlugins\cpuMon\interface.py:31
+msgid "Volume:"
+msgstr "Громкость:"
+
+#: addon\globalPlugins\cpuMon\interface.py:32
+msgid "Support an author..."
+msgstr "Поддержать автора..."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
@@ -98,5 +102,18 @@ msgstr ""
 "Дополнение мониторит загрузку процессора и объявляет имя процесса, который "
 "больше всего загружает процессор в период времени."
 
-#~ msgid "CPU threshold in percents"
-#~ msgstr "Минимальный порог срабатывания монитора в процентах"
+#~ msgid "{processName} loaded CPU by {processLoadPercent}%"
+#~ msgstr "{processName} Загрузка процессора на {processLoadPercent}%"
+
+#~ msgid "Minimum threshold for monitoring CPU load (in percents):"
+#~ msgstr ""
+#~ "Минимальный порог для мониторинга загрузки процессора (В процентах):"
+
+#~ msgid "Beep frequency for CPU load indication (in HZ):"
+#~ msgstr "Частота сигнала для индикации загрузки процессора (в герцах):"
+
+#~ msgid "Beep lenth for CPU load indication (in milliseconds):"
+#~ msgstr "Длинна сигнала для индикации загрузки процессора (в миллисекундах):"
+
+#~ msgid "Beep volume for CPU load indication:"
+#~ msgstr "Громкость сигнала для индикации загрузки процессора:"

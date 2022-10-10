@@ -36,7 +36,7 @@ def requestDonations(parentWindow):
     addon = addonHandler.getCodeAddon()
     addonName = addon.name
     title = _("Request for contributions to {name}").format(name=addonName)
-    message = _(""" {name} is a free add-on for NVDA.
- You can make a donation to its author to support further developments of this and other free projects.
- Do you want to donate now? Choose one of the available payment methods. You will be redirected to the corresponding website to complete a donation""").format(name=addonName)
+    message = _("{name} is a free add-on for NVDA.\n"
+    "You can make a donation to its author to support further developments of this and other free projects.\n"
+    "Do you want to donate now? Choose one of the available payment methods. You will be redirected to the corresponding website to complete a donation").format(name=addonName)
     return DonationDialog(parentWindow, title, message).ShowModal()
