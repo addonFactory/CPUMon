@@ -7,7 +7,12 @@ import addonHandler
 import config
 import globalPluginHandler
 import os
-from . import psutil
+try:
+    from . import psutil
+except (ImportError, ModuleNotFoundError):
+    import psutil
+    # https://t.me/blindexpert/41714
+
 import queueHandler
 import threading
 import time
