@@ -5,15 +5,15 @@
 
 import addonHandler
 import gui
+from gui.settingsDialogs import SettingsPanel
 import wx
 
 from .const import *
-from .donatedialog import requestDonations
 
 addonHandler.initTranslation()
 
 
-class CPUMonSettingsPanel(gui.SettingsPanel):
+class CPUMonSettingsPanel(SettingsPanel):
     title = addonSummary
 
     def makeSettings(self, sizer):
@@ -33,6 +33,7 @@ class CPUMonSettingsPanel(gui.SettingsPanel):
         self.donateBtn.Bind(wx.EVT_BUTTON, self.onDonate)
 
     def onDonate(self, evt):
+        from .donate_dialog import requestDonations
         requestDonations(self)
 
     def onSave(self):

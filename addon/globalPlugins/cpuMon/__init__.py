@@ -1,5 +1,5 @@
 #__init__.py
-# Copyright (C) 2022 Beqa Gozalishvili <beqaprogger@gmail.com>
+# Copyright (C) 2022-2024 Beqa Gozalishvili <beqaprogger@gmail.com>
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
@@ -7,7 +7,7 @@ import addonHandler
 import config
 import globalPluginHandler
 import os
-from . import psutil
+import psutil
 import queueHandler
 import threading
 import time

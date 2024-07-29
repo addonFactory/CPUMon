@@ -7,7 +7,7 @@ addon = addonHandler.getCodeAddon()
 addonName = addon.name
 addonDir = os.path.abspath(os.path.join(os.path.dirname(__file__), "globalPlugins", addonName))
 sys.path.append(addonDir)
-from donatedialog import requestDonations
+from donate_dialog import requestDonations
 sys.path.remove(sys.path[-1])
 import wx
 

@@ -23,23 +23,29 @@ addon_info = {
 	"addon_summary": _("CPU monitor"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description": _("""This addon monitors CPU load percentage and announces most heavy proccess name."""),
+	"addon_description": _("""This addon monitors CPU load percentage and announces most heavy process name."""),
 	# version
-	"addon_version": "0.1",
+	"addon_version": "0.2",
 	# Author(s)
-	"addon_author": "Beqa gozalishvili <beqaprogger@gmail.com>",
+	"addon_author": "Beka Gozalishvili <beqaprogger@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/beqabeqa473/cpuMon",
+	# URL for the add-on repository where the source code can be found
+	"addon_sourceURL": "https://github.com/beqabeqa473/cpuMon",
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
-	"addon_minimumNVDAVersion": "2021.1.0",
+	"addon_minimumNVDAVersion": "2024.2",
 	# Last NVDA version supported/tested (e.g. "2018.4.0", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2022.3.0",
+	"addon_lastTestedNVDAVersion": "2024.3",
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
 	"addon_updateChannel": None,
+	# Add-on license such as GPL 2
+	"addon_license": "GPL 2",
+	# URL for the license document the ad-on is licensed under
+	"addon_licenseURL": None,
 }
 
 # Define the python files that are the sources of your add-on.
@@ -70,3 +76,13 @@ baseLanguage = "en"
 # Extensions string must be of the form "markdown.extensions.extensionName"
 # e.g. "markdown.extensions.tables" to add tables.
 markdownExtensions = []
+
+# Custom braille translation tables
+# If your add-on includes custom braille tables (most will not), fill out this dictionary.
+# Each key is a dictionary named according to braille table file name,
+# with keys inside recording the following attributes:
+# displayName (name of the table shown to users and translatable),
+# contracted (contracted (True) or uncontracted (False) braille code),
+# output (shown in output table list),
+# input (shown in input table list).
+brailleTables = {}

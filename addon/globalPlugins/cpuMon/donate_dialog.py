@@ -1,5 +1,5 @@
-#donatedialog.py
-# Copyright (C) 2022 Beqa Gozalishvili <beqaprogger@gmail.com>
+#donate_dialog.py
+# Copyright (C) 2022-2023 Beqa Gozalishvili <beqaprogger@gmail.com>
 #This file is covered by the GNU General Public License.
 #See the file COPYING for more details.
 
@@ -37,6 +37,6 @@ def requestDonations(parentWindow):
     addonName = addon.name
     title = _("Request for contributions to {name}").format(name=addonName)
     message = _("{name} is a free add-on for NVDA.\n"
-    "You can make a donation to its author to support further developments of this and other free projects.\n"
+    "You can make a donation to its author to support further development of this and other free projects.\n"
     "Do you want to donate now? Choose one of the available payment methods. You will be redirected to the corresponding website to complete a donation").format(name=addonName)
     return DonationDialog(parentWindow, title, message).ShowModal()
